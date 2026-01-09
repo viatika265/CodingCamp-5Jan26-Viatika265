@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phi's Tasks</title>
+
+    <!-- CSS External  -->
+     <link rel="stylesheet" href="css/style.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>  
+    <header>
+        <h1 class="title">🪼Phi's Tasks</h1> 
+        <p class="tagline">🌀Make your day easier with Phi's Tasks🌀</p>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="todo-form">
+                <form id="todo-form">
+                    <input type="text" id="new-task-input" placeholder="Add a task..." />
+                    <input type="date" id="date"/>
+                    <select id="priority">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="Low">
+                            Low
+                        </option>
+                        <option value="Medium">
+                            Medium
+                        </option>
+                        <option value="High">
+                            High
+                        </option>
+                    </select>
+                    <button id="submit-button" type="submit">+</button>
+                </form>
+            </section>
+
+            <section class="action">
+                <div class="filter">
+                    <button data-filter="All">
+                        All📋
+                    </button>
+                    <button data-filter="Active">
+                        Active⏳
+                    </button>
+                    <button data-filter="Completed">
+                        Completed✔️
+                    </button>
+                </div>
+                <button id="delete-all" class="delete-all">Delete All</button>
+            </section>
+            <section class="history">
+                <ul id="card-list">
+                </ul>
+            </section>
+            <section class="progress-bar">
+                <div class="progress-container">
+                    <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                    <p id="progress-text">0% Completed</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        Organize your day, gently 🪼
+    </footer>
+
+        
+    <!-- JS External -->
+    <script src="js/script.js"></script>
+</body>
+</html>
